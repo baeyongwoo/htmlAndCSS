@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사원등록</title>
+</head>
+
+<body>
+    <h1>사원등록</h1>
+    <form action="register.do" method="post">
+        이름 <input type="text" name="name"> <br>
+        E-mail <input type="email" name="email"> <br>
+        전화번호 <input type="text" name="tel"> <br>
+        성별 <input type="radio" name="gender">남
+        <input type="radio" name="gender">여 <br>
+        부서 <select name="department">
+            <option value="개발팀">개발팀</option>
+            <option value="인사팀">인사팀</option>
+            <option value="영업팀">영업팀</option>
+            <option value="기획팀">기획팀</option>
+        </select> <br>
+        동아리 <input type="checkbox" name="club01">축구
+        <input type="checkbox" name="club02">게임
+        <input type="checkbox" name="club03">등산
+        <input type="checkbox" name="club04">코딩 <br>
+
+        사진 <input type="file" name="picture"> <br>
+        입사동기 <br> <textarea name="introduce" maxlength="500" rows="10" cols="50"
+            placeholder="자기소개를 입력해주세요 500자 이내"></textarea>
+        <br>
+        <input type="submit" value="등록">
+        <button>등록</button> <!--button은 default 값이 submit-->
+    </form>
+</body>
+
+</html>
