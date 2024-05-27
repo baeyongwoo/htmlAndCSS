@@ -1,23 +1,35 @@
-h2{
-    color: red;
-}
-.highlight{
-    border: solid;
+#id {
+    font-size: 18px;
+    font-weight: 100px;
 }
 
-#profile{
-    border: 1px solid blue;
+.highlight {
+    text-align: center;
 }
 
-.thumbnails_grid{
+#profile {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 50px;
+   
+
+}
+
+.thumbnails_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.thumbnails{
+
+.thumbnails {
     width: 100%;
 }
 
-#stat_bar{
+#stat_bar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -28,22 +40,60 @@ h2{
     margin-top: 5px;
 }
 
-.stat{
+.stat {
     text-align: center;
 }
 
-#profile_pic{
+#profile_pic {
     width: 50px;
     height: 50px;
 }
 
-.circle_pic{
-    border: 1px solid white;
+.circle_pic {
     border-radius: 50%;
     width: 100%;
     height: 100%;
 }
 
-#highlight_pic{
+.highlight_pic {
+    width: 35px;
+    height: 35px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hightlight_area {
+    display: grid;
+    grid-template-columns: 45px 45px 1fr;
+
+    text-align: center;
+
+}
+
+button{
+    height: 80%;
+    width: 25%;
+
+    padding: 10px 10px 17px 10px;
+
+    font-size: 10px;
+    background-color: rgb(132, 132, 132) !important;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 30px;
+}
+
+#top img{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    object-fit: contain;
 
 }
