@@ -4,19 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyIntroduceDocument</title>
+    <title style="color: red;">MyIntroduceDocument</title>
 
     <style>
-         #interesting { 
+        body {
+            font-size: 16px;
+            font-family: '굴림체';
+
+        }
+
+        #interesting {
             font-style: italic;
             background-color: green;
-            width: 32%;}
+            width: 32%;
+        }
+
+        .title {
+            font-size: 100px;
+        }
+
+        .mypet {
+            display: grid, inline-block;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;">About my self &#128640;</h1>
-    <form action="./modify.html" name="modifyForm" method="get" style="text-align: right; margin-right: 10px;" >
+    <h1 style="text-align: center; font-style: italic;">About my self &#128640;</h1>
+    <form action="./modify.html" name="modifyForm" method="get" style="text-align: right; margin-right: 10px;">
         <input type="hidden" name="name" value="배용우(bae yong woo)">
         <input type="hidden" name="age" value="28(97년생)">
         <input type="hidden" name="area" value="서울">
@@ -26,10 +42,10 @@
         <input type="hidden" name="personality" value="차분하고, 매사 긍정적이며, 끈기있게 도전하며 열정적이다.">
         <input type="hidden" name="interesting" value="시큐어코딩을 하면서 좀 더 안전한 풀스택 개발자의 길">
         <input type="hidden" name="goal" value="안다고 게을르지말고, 좀 더 깊이 생각하는 능력과, 내가 아는 것과 헷갈리는 것 잊어버린것들 정리 잘하기">
-        <input type="image" src="./Instagram/images/setting.png" width="30px" value="수정" >
+        <input type="image" src="./img/setting.png" width="30px" value="수정">
     </form>
     <div style="text-align: right; margin-right: 10px;">
-        
+
         <p>made in date : 24.05.23</p>
     </div>
 
@@ -52,26 +68,26 @@
     <div>
         <p>좋아하는 애완동물 : 고양이</p>
         <div>
-            <img src="./Instagram/images/cat01.jpg" alt="" width="15%" height="10%" style="border-radius: 20px;">
-            <img src="./Instagram/images/cat02.jpg" alt="" width="15%" height="10%" style="border-radius: 20px;">
-            <img src="./Instagram/images/cat03.jpg" alt="" width="10%" height="10%" style="border-radius: 20px;">
+            <img src="./img/cat01.jpg" alt="" width="15%" height="10%" class="mypet" style="border-radius: 20px;">
+            <img src="./img/cat02.jpg" alt="" width="15%" height="10%" class="mypet" style="border-radius: 20px;">
+            <img src="./img/cat03.jpg" alt="" width="10%" height="10%" class="mypet" style="border-radius: 20px;">
 
         </div>
 
     </div>
-    <div id="interesting" >
-        <p>성격 : <strong>차분</strong>하고, 매사 <strong>긍정적</strong>이며, <strong>끈기</strong>있게 <strong>도전</strong>하며 <strong>열정</strong>적이다.</p>
+    <div id="interesting">
+        <p>성격 : <strong>차분</strong>하고, 매사 <strong>긍정적</strong>이며, <strong>끈기</strong>있게 <strong>도전</strong>하며
+            <strong>열정</strong>적이다.</p>
     </div>
     <div>
         <p>관심사 : 시큐어코딩을 하면서 좀 더 안전한 풀스택 개발자의 길</p>
     </div>
 
     <div style="text-align: center;">
-        <a href="https://blog.naver.com/dyddn30612"><img src="./Instagram/images/blogImage.png" alt="" width="3%"></a>
-        <a href="https://github.com/baeyongwoo?tab=repositories"><img src="./Instagram/images/githubImage.png" alt=""
-                width="3%"></a>
-        <a href="https://www.notion.so/baeyongwoo/sw-16161402757c4bce858b0d628735ec0c"><img
-                src="./Instagram/images/notionImage.png" alt="" width="3%"></a>
+        <a href="https://blog.naver.com/dyddn30612"><img src="./img/blogImage.png" alt="" width="3%"></a>
+        <a href="https://github.com/baeyongwoo?tab=repositories"><img src="./img/githubImage.png" alt="" width="3%"></a>
+        <a href="https://www.notion.so/baeyongwoo/sw-16161402757c4bce858b0d628735ec0c"><img src="./img/notionImage.png"
+                alt="" width="3%"></a>
     </div>
 
     <hr>

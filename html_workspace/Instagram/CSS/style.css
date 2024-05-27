@@ -1,0 +1,49 @@
+h2{
+    color: red;
+}
+.highlight{
+    border: solid;
+}
+
+#profile{
+    border: 1px solid blue;
+}
+
+.thumbnails_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.thumbnails{
+    width: 100%;
+}
+
+#stat_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.stat{
+    text-align: center;
+}
+
+#profile_pic{
+    width: 50px;
+    height: 50px;
+}
+
+.circle_pic{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#highlight_pic{
+
+}
