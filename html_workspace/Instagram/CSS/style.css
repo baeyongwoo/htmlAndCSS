@@ -87,6 +87,9 @@ button{
     display: grid;
     grid-template-columns: 4fr 7fr 4fr;
     height: 30px;
+
+    border-bottom: 0.1px solid gray;
+    margin-bottom: 10px;
 }
 
 #top img{
@@ -96,4 +99,50 @@ button{
     height: 100%;
     object-fit: contain;
 
+}
+
+#top input{
+    height:60%;
+    width:95%;
+
+    margin: auto;
+
+    text-align: center;
+    background-color: white;
+
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    font-size: 10px;
+    font-weight: 100;
+
+    
+}
+
+i {
+    color: grayk;
+}
+
+#top i{
+    font-size: 14px;
+}
+
+#top div{
+    text-align: center;
+    padding-top: 6px;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 15px;
+
+    height: 30px;
+
+}
+
+.selected{
+    border-bottom: 3px solid gray;
 }

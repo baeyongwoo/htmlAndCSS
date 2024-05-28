@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://gith.co.kr/wp-content/uploads/2023/10/favicon-f-150x150.png" sizes="32x32" />
+    <title>글로벌아이티</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #4C320D;
+
+        }
+
+        #wrap {
+            width: 800px;
+            margin: auto;
+
+        }
+
+        #top {
+            /* 이미지를 넣을 때 원본 사이즈 체크 */
+            width: 800px;
+            height: 10px;
+            background-image: url(./img/top.jpg);
+        }
+
+        #header {
+            width: 800px;
+            height: 100px;
+            background-image: url(./img/header.jpg);
+        }
+
+        #header h1 {
+            color: white;
+            padding: 20px;
+        }
+
+        #menu {
+            width: 800px;
+            height: 30px;
+            background-image: url(./img/menu.jpg);
+        }
+
+        #menu span {
+            padding-left: 20px;
+
+        }
+
+        #content {
+            width: 800px;
+            height: 500px;
+            background-image: url(./img/content.jpg);
+        }
+        
+        #content h1{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+
+        #section{
+            padding-left: 20px;
+            width: 610px;
+            padding-top: 20px;
+            padding-left: 20px;
+            float: left;
+            
+        }
+
+        #section img{
+            width: 500px;
+            height: 300px;
+            padding-bottom: 10px;
+        }
+
+        #bottom {
+            width: 800px;
+            height: 20px;
+            background-image: url(./img/bottom.jpg);
+        }
+
+        
+        #aside{
+            float: left;
+            width: 130px;
+            padding-left: 20px;
+            
+            /* background-color: red; */
+
+            }
+
+    </style>
+
+</head>
+
+
+<body>
+    <!-- 외부를 감싼다해서 wrap -->
+    <div id="wrap">
+        <div id="top">
+
+        </div>
+        <div id="header">
+            <h1>글로벌아이티</h1>
+        </div>
+        <div id="menu">
+            <span>회사소개 | 회사연혁 | 과정소개 | Content</span>
+        </div>
+        <div id="content">
+            <div id="section">
+                <h1>글로벌 IT 인재개발원은 <br>
+                    4차 산업혁명의 중심에 있습니다</h1>
+
+                    <img src="./img/intro.jpg">
+                <p>
+                    정보통신기술(ICT)의 융합으로 이뤄지며 인공지능, 로봇기술, 생명과학이 주도하는 차세대 산업혁명의 중심에서
+                    대한민국을 넘어 세계 무대로 진출할 글로벌 인재 양성을 목표를 삼아 나아가고 있습니다
+                </p>
+
+            </div>
+            <div id="aside">
+                과정소개
+                <ul>
+                    <li>자바과정</li>
+                    <li>인공지능과정</li>
+                    <li>네트워크과정</li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottom">
+
+        </div>
+    </div>
+</body>
+
+</html>
