@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,54 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />	
-    
+    <link rel="stylesheet" href="css/style.css" />
+
 
 </head>
+
 <body>
     <!-- figure 이미지 시멘틱 태그에 많이 씀, 멀티미디어 -->
+    <!-- #배경동영상 -------------------------------------------------------------------------->
     <figure class="vid">
         <!-- 축약형 
-        재생이 자동으로 안된다면 muted -->
+            재생이 자동으로 안된다면 muted -->
         <video loop autoplay muted>
-        <!-- <video loop="loop" autoplay="autoplay"> -->
+            <!-- <video loop="loop" autoplay="autoplay"> -->
             <source src="./img/nike.mp4" type="video/mp4">
-
         </video>
     </figure>
+
+    <!-- 배경동영상 end -->
+
+    <!-- 로고 --------------------------------------------------------------------------------->
+    <!-- alt 옵션은 img가 없을 경우 nike.air를 출력해줘라 -->
+    <h1><img src="./img/logo2.png" alt="nike.air"></h1>
+    <!-- 로고end -->
+    
+    <!-- header --------------------------------------------------------------------------------->
+    <header>
+        <!-- gbn : 글로벌 메뉴 같은 느낌? -->
+        <ul id="gnb">
+            <li class="on">
+				<a href="#"><em><i class="fa fa-refresh fa-spin"></i>About NIKE</em></a>				
+			</li>
+            <li>
+				<a href="#"><em>Brand Info</em></a>						
+			</li>
+			<li>
+				<a href="#"><em> Community</em></a>				
+			</li>
+			<li>
+				<a href="#"><em>Product Value</em></a>				
+			</li>
+			<li>				
+				<a href="#"><em>Company History</em></a>				
+			</li>	
+        </ul>
+    </header>
+
+
+
 </body>
+
 </html>
