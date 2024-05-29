@@ -73,7 +73,7 @@ header {
     left: -420px;
 
     /* linear-gradient는 색깔이 점진적으로 바뀌게 한다 */
-    background: linear-gradient(-45deg, #e6fc55, #b9fb05, #97e031);
+    background: linear-gradient(-45deg,#e6fc55, #b9fb05, #97e031);
     transform: skewX(-40deg);
 }
 
@@ -103,9 +103,54 @@ header {
     display: inline-block;
     transform: skewX(40deg) !important;
 }
+#gnb em i { 	margin-right:20px;}
 #gnb>li.on>a{
     background: #111; color: white;
 }
 #gnb>li:hover>a{
     background: black; color: white;
+}
+
+
+/* 2depth */
+#gnb ul{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: all 0.4s;
+    /* 트랜지션은 hover 되기 전 상태에 적어줘야한다 */
+}
+#gnb>li:hover ul{
+    opacity: 0.8;
+    left: 205px;
+}
+
+#gnb ul a { display: block; width: 150px; height: 40px; background: #222; box-sizing: border-box; padding-right: 40px; text-align: right; }
+#gnb ul a:hover{background-color: yellowgreen; color: #333;}
+#gnb>li.on ul{opacity: 0.8; left: 205px; top: -10px;}
+#gnb>li.on ul a{background: #444; opacity: 0.7;}
+
+/* sns 버튼 모음 */
+#sns {position: fixed; top: 60px; right: 50px;}
+#sns li {float: left; margin-right: 30px;}
+#sns .fa, .fa-brands{
+    font-size: 25px; color: green; opacity: 0.5;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+#sns .fa:hover, fa-brands:hover { opacity: 1; transform: scale(1.4);}
+
+
+/* 자동롤링 버튼*/
+#side .btnContents { width:150px; height:50px; position:absolute;  bottom:40px; left:100px; color:#b9fb05;	transform:skewX(40deg); }
+#side:hover .btnContents { left:700px;}	
+.btnContents i { font-size:60px; position:absolute; bottom:0px; right:0px; opacity:1;}
+.btnContents i {
+    font-size: 60px;
+}
+
+@keyframes myani{
+    0% {right: 0px; transform: scale(1); opacity: 1;}
+    100% {right: 100px; transform: scale(1.5); opacity: 0;}
 }
