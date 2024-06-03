@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CouPang</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header logo -->
+        <div class="header">
+            <h1><img src="./img/coupang_log.png"></h1>
+        </div>
+        <!-- 회원가입 창 -->
+        <div class="join_form">
+            <div class="title">
+                회원정보를 입력해주세요.
+            </div>
+            <form>
+                <div class="input_area">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="email" type="email" class="form-control" name="email" placeholder="아이디(이메일)">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="비밀번호">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" class="form-control" name="name" placeholder="이름">
+                    </div>
+
+            </form>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                <input type="tel" class="form-control" name="tel" placeholder="휴대폰 번호">
+            </div>
+        </div>
+
+        <!-- checkbox 구현 -->
+        
+        <div class="g-terms-checkbox ">
+
+            <div class="checkall checkall-first">
+                <div id="c-checkbox-item_checkall" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_checkall" aria-hidden="true" parent-id="">
+                        <label for="chk_checkall" role="checkbox" aria-label="모두 확인하였으며 동의합니다" aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">모두 확인하였으며 동의합니다.</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <span class="message">
+                    전체 동의에는 필수 및 선택 정보에 대한 동의가 포함되어 있으며,&nbsp;개별적으로 동의를 선택 하실 수 있습니다.&nbsp;선택 항목에 대한 동의를 거부하시는 경우에도
+                    서비스 이용이 가능합니다.
+                </span>
+            
+            </div>
+
+
+            <div class="error-tip">
+                <i class="icon icon-error-tip"></i>
+                <span>필수 항목에 모두 동의해주세요</span>
+            </div>
+            <ul class="terms">
+                <div id="c-checkbox-item_join-terms-fourteen" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_join-terms-fourteen" aria-hidden="true" parent-id="">
+                        <label for="chk_join-terms-fourteen" role="checkbox" aria-label="만 14세 이상입니다"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[필수] 만 14세 이상입니다</span>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_join-terms-service" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_join-terms-service" aria-hidden="true" parent-id="">
+                        <label for="chk_join-terms-service" role="checkbox" aria-label="쿠팡 이용약관 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[필수] 쿠팡 이용약관 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_join-terms-commerce" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_join-terms-commerce" aria-hidden="true" parent-id="">
+                        <label for="chk_join-terms-commerce" role="checkbox" aria-label="전자금융거래 이용약관 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[필수] 전자금융거래 이용약관 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_join-terms-privacy-collect-use" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_join-terms-privacy-collect-use" aria-hidden="true" parent-id="">
+                        <label for="chk_join-terms-privacy-collect-use" role="checkbox" aria-label="개인정보 수집 및 이용 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[필수] 개인정보 수집 및 이용 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_agree-to-collect-third-part-information" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_agree-to-collect-third-part-information" aria-hidden="true"
+                            parent-id="">
+                        <label for="chk_agree-to-collect-third-part-information" role="checkbox"
+                            aria-label="개인정보 제3자 제공 동의" aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[필수] 개인정보 제3자 제공 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_POLICY_AGREE_COLLECT" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_POLICY_AGREE_COLLECT" aria-hidden="true" parent-id="">
+                        <label for="chk_POLICY_AGREE_COLLECT" role="checkbox" aria-label="마케팅 목적의 개인정보 수집 및 이용 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[선택] 마케팅 목적의 개인정보 수집 및 이용 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_agree-to-receive-ads" class="c-checkbox-item ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_agree-to-receive-ads" aria-hidden="true" parent-id="">
+                        <label for="chk_agree-to-receive-ads" role="checkbox" aria-label="광고성 정보 수신 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[선택] 광고성 정보 수신 동의</span>
+                        </label>
+
+                        <button class="icon icon-right-arrow" type="button" aria-haspopup="dialog"
+                            aria-label="약관 대화상자 열기">
+                        </button>
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_POLICY_AGREE_EMAIL" class="c-checkbox-item  c-checkbox-item__subitem ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_POLICY_AGREE_EMAIL" aria-hidden="true" parent-id="">
+                        <label for="chk_POLICY_AGREE_EMAIL" role="checkbox" aria-label="이메일 수신 동의" aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[선택] 이메일 수신 동의</span>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_POLICY_AGREE_SMS" class="c-checkbox-item  c-checkbox-item__subitem ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_POLICY_AGREE_SMS" aria-hidden="true" parent-id="">
+                        <label for="chk_POLICY_AGREE_SMS" role="checkbox" aria-label="SMS, SNS 수신 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[선택] SMS, SNS 수신 동의</span>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div id="c-checkbox-item_POLICY_AGREE_MARKETING_PUSH"
+                    class="c-checkbox-item  c-checkbox-item__subitem ">
+                    <div class="wrapper">
+                        <input type="checkbox" id="chk_POLICY_AGREE_MARKETING_PUSH" aria-hidden="true" parent-id="">
+                        <label for="chk_POLICY_AGREE_MARKETING_PUSH" role="checkbox" aria-label="앱 푸시 수신 동의"
+                            aria-checked="false">
+                            <i aria-hidden="true" class="icon icon-chk"></i>
+                            <span aria-hidden="true">[선택] 앱 푸시 수신 동의</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </ul>
+            <div class="personal_infomation_guideline">
+
+            </div>
+        </div>
+        <div class="button_join">
+            <button type="button" class="btn btn-primary">동의하고 가입하기</button>
+        </div>
+        
+    </div>
+
+    <div class="tip_root">
+        <p>법인 고객이신가요?</p>
+        <p>사업자 회원으로 전용 특가 혜택을 누려보세요.</p>
+        <a href="#">쿠팡비즈 간편가입></a>
+    </div>
+
+    <div class="footer">
+        &copy;Coupang Corp. All rights reserved.
+    </div>
+
+
+    </div>
+</body>
+
+</html>

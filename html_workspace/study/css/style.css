@@ -1,0 +1,13 @@
+*{
+    list-style: none;
+    /* 네이버 바로가기 같은 바로가기 밑줄 삭제 */
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    border-collapse: collapse;  
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box1{
+            width: 500px;
+            height: 500px;
+            background: red;
+            /* 부모를 움직이게 할 때 relative */
+            position: relative;
+            overflow: hidden;
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: absolute;
+            /* 위에서 아래로 */
+            top: 100px;
+            /* 왼쪽에서 오른쪽으로 */
+            left: -50px;
+            /* 트랜지션은 원래 위치에서 */
+            transition: 0.5s;
+        }
+        #box1:hover #box2{
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        box1
+            <div id="box2">
+                box2
+            </div>
+
+    </div>
+</body>
+</html>

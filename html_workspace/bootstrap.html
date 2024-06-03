@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .badge{background: red; width: 25%;}
+        input>.btn btn-primary{ 
+          background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background: red; height: 200px;">container</div>
+    <div class="container-fluid" style="background: blue; height: 200px;">container</div>
+    <div class="container-fluid" style="background-color: green; height: 200px;">
+        <div class="container">
+            container-fluid & container
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6" style="background: red;">box1</div>
+            <div class="col-md-3 col-sm-6" style="background: yellow;">box2</div>
+            <div class="col-md-3 col-sm-6" style="background: fuchsia;">box2</div>
+            <div class="col-md-3 col-sm-6" style="background: blue;">box3</div>
+        </div>
+
+
+    </div>
+
+    <p>Use the contextual classes to provide "meaning through colors":</p>
+    <p class="text-muted">This text is muted.</p>
+    <p class="text-primary">This text is important.</p>
+    <p class="text-success">This text indicates success.</p>
+    <p class="text-info">This text represents some information.</p>
+    <p class="text-warning">This text represents a warning.</p>
+    <p class="text-danger">This text represents danger.</p>
+
+
+    <p class="bg-primary">This text is important.</p>
+    <p class="bg-success">This text indicates success.</p>
+    <p class="bg-info">This text represents some information.</p>
+    <p class="bg-warning">This text represents a warning.</p>
+    <p class="bg-danger">This text represents danger.</p>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <img src="img/pic.jpg" class="img-rounded" alt="">
+      <img src="img/pic.jpg" class="img-circle" alt="">
+     
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="/w3images/lights.jpg" >
+              <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum...</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="./img/pic.jpg">
+              <img src="./img/pic.jpg" alt="Nature" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum...</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="./img/pic.jpg">
+              <img src="./img/pic.jpg" alt="Fjords" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum...</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Bootstrap Tutorial</h1>      
+          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+        </div>
+        <p>This is some text.</p>      
+        <p>This is another text.</p>      
+      </div>
+      
+      <div class="container">
+        <h2>Button Tags</h2>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <button type="button" class="btn btn-info">Button</button>
+        <input type="button" class="btn btn-info" value="Input Button">
+        <input type="submit" class="btn btn-info" value="Submit Button">
+      </div>
+      <a href="#">Updates <span class="badge">2</span></a>
+
+
+      <form action="login.do" method="post">
+        <input type="text" name="id" id="id" placeholder="id" class="form-control form-group" >
+        <input type="password" name="pw" id="pw" placeholder="pw" class="form-control fomr-group" >
+        <input type="submit" value="로그인"  class="btn btn-primary">
+
+      </form>
+
+
+</body>
+
+</html>
